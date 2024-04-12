@@ -36,11 +36,28 @@ function employeeData() {
 // Display the average salary
 const displayAverageSalary = function (employeesArray) {
   // TODO: Calculate and display the average salary
+  let totalEmployee = employeesArray.length 
+  let totalSalary = 0
+  for (i=0; i<employeesArray.length; i++){
+    totalSalary += employeesArray [i].salary
+  }
+  const average = totalSalary/totalEmployee
+  console.log (average);
 };
 
 // Select a random employee
 const getRandomEmployee = function (employeesArray) {
   // TODO: Select and display a random employee
+  //employees.sort(function (a, b) {
+   // if (a.lastName < b.lastName) {
+   //   return -1;
+  //  } else {
+   //   return 1;
+  //  })
+   // console.log (getRandomEmployee);
+   let index = Math.floor(Math.random() * employeesArray.length);
+   console.log (employeesArray[index])
+  
 };
 
 /*
